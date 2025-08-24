@@ -7,7 +7,7 @@
 
 int main(int argc, const char* argv[]) {
     if (!glfwInit()) {
-        std::cout << "Hata oluştu >> GLFW'de" << std::endl;
+        std::cout << "Hata oluştu >> GLFW" << std::endl;
         return -1;
     }
 
@@ -16,7 +16,7 @@ int main(int argc, const char* argv[]) {
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE); 
 
     GLFWwindow* window = glfwCreateWindow(800, 600, "OppGlExample", nullptr, nullptr); 
-    if (!window) {//açılmama durumunda hata mesajı verdirecek
+    if (!window) {//Gives an error if failed to open
         std::cout << "Hata oluştu >> Pencere oluşturulamadı" << std::endl;
         glfwTerminate();
         return -1;
